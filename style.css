@@ -1,0 +1,98 @@
+ body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Темный фон страницы */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+ }
+/* Контейнер формы */
+.registration-card {
+    background-color: #333333; /* Цвет карточки */
+    padding: 40px 30px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-left: 100px;
+}
+/* Заголовок MapSearch */
+.brand {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1a73e8; /* Синий цвет как на фото */
+    margin-bottom: 5px;
+}
+/* Подзаголовок "регистрация" */
+.subtitle {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+/* Стили полей ввода */
+.input-group {
+    margin-bottom: 15px;
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #4d4d4d; /* Серый цвет инпутов */
+    color: #cccccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+input::placeholder {
+    color: #888;
+}
+/* Синяя кнопка "Создать" */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-submit:hover {
+    background-color: #155cb0;
+}
+/* Секция "войти с помощью" */
+.social-text {
+    font-size: 10px;
+    color: #aaa;
+    margin: 15px 0 10px;
+    text-transform: lowercase;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 50%;
+}
+/* Цвета для иконок (имитация логотипов) */
+.google { color: #EA4335; font-size: 18px; }
+.yandex { color: #ff0000; font-size: 18px; }
+.vk { color: #0077FF; font-size: 18px; }
+
