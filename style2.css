@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Верхняя панель */
+.top-nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-toggle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.sidebar-toggle::before {
+    content: '';
+    width: 12px;
+    height: 20px;
+    border-right: 2px solid white;
+}
+.pro-pack-btn {
+    background: white;
+    color: #1a73e8;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background: linear-gradient(to right, #1a73e8, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+/* Основной контент */
+.main-container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+.logo {
+    font-size: 72px;
+    font-weight: bold;
+    color: var(--brand-blue);
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+}
+.logo span {
+    color: var(--brand-blue);
+}
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+/* Поле ввода сообщения */
+.chat-input-container {
+    background-color: var(--input-bg);
+    border-radius: 24px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+/* Карточка прикрепленного файла */
+.file-attachment {
+    background-color: #d8c8c8;
+    border-radius: 12px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.file-icon {
+    width: 24px;
+    height: 24px;
+    background: #bbb;
+    border-radius: 4px;
+}
+.file-name {
+    color: #333;
+    font-size: 14px;
+    font-family: monospace;
+}
+.remove-file {
+    background: #ff4d4d;
+    color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+}
+/* Строка ввода и иконки */
+.input-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.chat-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #555;
+    padding: 10px 0;
+}
+.chat-input::placeholder {
+    color: #888;
+}
+.action-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.clip-icon {
+    color: #1a73e8;
+    cursor: pointer;
+    font-size: 20px;
+}
+.send-btn {
+    background-color: #1a73e8;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+/* Футер */
+.footer-links {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #888;
+}
+.footer-links a {
+    color: var(--brand-blue);
+    text-decoration: none;
+}
+
+:root {
+   --bg-color: #1e1e1e;
+   --brand-blue: #1a73e8;
+    --input-bg: #fff1f1; /* Светлый розоватый оттенок как на макете */
+    --text-white: #ffffff;
+    --text-gray: #aaaaaa;
+}
+
+.upload-label{
+    color: #1e1e1e;
+}
